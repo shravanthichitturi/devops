@@ -1,0 +1,42 @@
+Like most VCSs, Git has the ability to tag specific points in a repository’s history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0 and so on). In this section, you’ll learn how to list existing tags, how to create and delete tags, and what the different types of tags are.
+-----------------------------------------------------------------------------------------------------------------
+tag meaning
+tag commands ---3
+how do you create branch from tag?
+how do create branch and checkout automatically?
+
+git tag -l -----list all tag
+git tag
+git log --oneline --graphs --all (all branches)
+git tag v1 ---enter tag created (lite height tag)
+git log --oneline --graphs --all(lastest commit)
+
+to add description to tag ------------------ annotated tag----------------
+
+---ls----vi address.txt-------git commit -am"update" --git status----- git log --oneline --graphs --all (add tag to v1)
+---ls----vi adout.txt-------git commit -am"update" --git status----- git log --oneline --graphs --all---git status---modified----commited --git log --oneline --graphs 
+
+
+Giving Annotated tag--------------------------
+* git tag -a v2.0 (deafaault opening notepad)
+* git tag 
+* git log --oneline --graphs --all
+
+
+to see change happen between tag 1 and tag 2---------------------------
+*git diff v1.0 v2.0 (you can see the changes)
+*git tag
+
+to delete tag--------------------
+* git tag -d v1.0 ------  git log --oneline --graphs --all
+
+You can give tag to already created files------------------
+*git tag -a v1.0 09cd897 (commit id)----opening notepad------------tag created
+*to update tag git tag -a vl.0 -f (forceful) b0cb789----------opening notepad------------tag created to other tag
+
+To push Tag to github ----------------------
+*git push origin master --tags
+
+
+
+
